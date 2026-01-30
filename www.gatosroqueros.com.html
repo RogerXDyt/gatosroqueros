@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gatos Rockeros - Tienda Oficial</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #ffcc00;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+      color: #ff3366;
+      text-shadow: 0 0 10px #ff0055;
+    }
+
+    .miawcoin {
+      font-size: 2em;
+      margin: 20px 0;
+      color: #00ccff;
+    }
+
+    .pay-button {
+      background-color: #ff3366;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 20px 0;
+      transition: all 0.3s;
+    }
+
+    .pay-button:hover {
+      background-color: #ff0055;
+      transform: scale(1.1);
+    }
+
+    .disclaimer {
+      background-color: #333;
+      color: #ff9900;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cat-icon {
+      font-size: 4em;
+      margin: 20px 0;
+    }
+
+    #thank-you {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #00ff99;
+    }
+
+    #thank-you a {
+      color: #00ccff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎸 Gatos Rockeros 🎸</h1>
+  
+  <div class="cat-icon">🐱</div>
+
+  <div class="miawcoin">Pagar 50 MiawCoins</div>
+
+  <button class="pay-button" onclick="showThanks()">ROCKEA AHORA</button>
+
+  <div id="thank-you">
+    ¡Gracias! 🎸<br>
+    Mira el YouTube del creador: <a href="https://www.youtube.com/@roger.canercalafell" target="_blank">RogerXD</a>
+  </div>
+
+  <div class="disclaimer">
+    ⚠️ ¡Atención! Los MiawCoins son una moneda ficticia utilizada únicamente en este sitio web. 
+    No tienen valor monetario real y no se pueden intercambiar por dinero ni bienes reales.
+  </div>
+
+  <script>
+    function showThanks() {
+      document.getElementById('thank-you').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
